@@ -3,7 +3,7 @@ import { Calendar, MapPin, Briefcase, GraduationCap } from 'lucide-react';
 import { experience } from '../data/portfolioData';
 
 interface ExperienceCardProps {
-  type: 'work' | 'education';
+  type: 'work' | 'education' | 'achievement';
   title: string;
   company: string;
   location: string;
@@ -21,9 +21,9 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   description,
   isLast
 }) => {
-  const Icon = type === 'work' ? Briefcase : GraduationCap;
-  const iconColor = type === 'work' ? 'text-blue-600' : 'text-purple-600';
-  const bgColor = type === 'work' ? 'bg-blue-50 dark:bg-blue-900/20' : 'bg-purple-50 dark:bg-purple-900/20';
+  const Icon = type === 'work' ? Briefcase : type === 'achievement'? Briefcase : GraduationCap;
+  const iconColor = type === 'work' ? 'text-blue-600'  : type === 'achievement'? 'text-green-600' : 'text-purple-600';
+  const bgColor = type === 'work' ? 'bg-blue-50 dark:bg-blue-900/20'  : type === 'achievement'? 'bg-green-50 dark:bg-green-900/20' : 'bg-purple-50 dark:bg-purple-900/20';
 
   return (
     <div className="relative flex items-start space-x-6">
@@ -86,7 +86,7 @@ const Experience: React.FC = () => {
           {experience.map((item, index) => (
             <ExperienceCard
               key={item.id}
-              type={item.type as 'work' | 'education'}
+              type={item.type as 'work' | 'education' | 'achievement'}
               title={item.title}
               company={item.company}
               location={item.location}

@@ -1,75 +1,99 @@
 export const personalInfo = {
-  name: "Alex Johnson",
+  name: "Rudraksha Singh Chauhan",
   tagline: "Full-Stack Developer & UI/UX Enthusiast",
-  bio: "Passionate full-stack developer with 5+ years of experience creating beautiful, functional web applications. I love turning complex problems into simple, elegant solutions and have a keen eye for design and user experience.",
-  highlights: [
-    { label: "Role", value: "Senior Frontend Developer" },
-    { label: "Passion", value: "Creating seamless user experiences" },
-    { label: "Interest", value: "AI/ML and emerging web technologies" },
-    { label: "Location", value: "San Francisco, CA" }
-  ],
-  email: "alex.johnson@email.com",
-  phone: "+1 (555) 123-4567",
+  bio: "Engineering student exploring full-stack development, AI integration, and innovative product building. Always learning, building, and improving.",
+highlights: [
+  { label: "Role", value: "Aspiring Software Engineer" },
+  { label: "Education", value: "Final Year Engineering Student" },
+  { label: "Seeking", value: "Jobs & Internships" },
+  { label: "Interest", value: "Full Stack Development & AI" }
+],
+  email: "rudrakshasingh6@email.com",
+  phone: "+91 8545800628",
   social: {
-    github: "https://github.com/alexjohnson",
-    linkedin: "https://linkedin.com/in/alexjohnson",
-    twitter: "https://twitter.com/alexjohnson"
+    github: "https://github.com/rudraa19nov",
+    linkedin: "https://www.linkedin.com/in/rudraksha-singh-chauhan-620294287/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B%2Ff9HbnnuSvaB9%2FWZwfWQjw%3D%3D",
+    // twitter: "https://twitter.com/alexjohnson"
   }
 };
 
 export const skills = {
   frontend: [
-    { name: "React", icon: "⚛️" },
-    { name: "TypeScript", icon: "📘" },
-    { name: "Next.js", icon: "▲" },
-    { name: "Tailwind CSS", icon: "🎨" },
-    { name: "Vue.js", icon: "💚" },
-    { name: "Sass/SCSS", icon: "💄" }
-  ],
-  backend: [
-    { name: "Node.js", icon: "🟢" },
-    { name: "Python", icon: "🐍" },
-    { name: "PostgreSQL", icon: "🐘" },
-    { name: "MongoDB", icon: "🍃" },
-    { name: "GraphQL", icon: "◉" },
-    { name: "REST APIs", icon: "🔌" }
-  ],
+  { name: "HTML5", icon: "🌐" },
+  { name: "CSS3", icon: "🎨" },
+  { name: "JavaScript", icon: "📜" },
+  { name: "React.js", icon: "⚛️" },
+  { name: "Next.js", icon: "▲" },
+  { name: "Tailwind CSS", icon: "💨" },
+  { name: "Bootstrap", icon: "🅱️" },
+  { name: "Redux", icon: "🔄" },
+  { name: "TypeScript", icon: "📘" },
+  { name: "Responsive Design", icon: "📱" },
+  { name: "Framer Motion", icon: "✨" },
+  { name: "Material UI", icon: "🧩" }
+],
+ backend: [
+  { name: "Node.js", icon: "🟢" },
+  { name: "Express.js", icon: "🚂" },
+  { name: "MongoDB", icon: "🍃" },
+  { name: "MySQL", icon: "🐬" },
+  { name: "REST APIs", icon: "🔌" },
+  { name: "Firebase", icon: "🔥" },
+  { name: "JWT Authentication", icon: "🔐" },
+  { name: "Python", icon: "🐍" },
+  //{ name: "C++", icon: "💻" }
+],
   tools: [
-    { name: "Git", icon: "📚" },
-    { name: "Docker", icon: "🐳" },
-    { name: "AWS", icon: "☁️" },
-    { name: "Figma", icon: "🎭" },
-    { name: "Webpack", icon: "📦" },
-    { name: "Jest", icon: "🧪" }
-  ]
+  { name: "Git", icon: "📚" },
+  { name: "GitHub", icon: "🐙" },
+  { name: "VS Code", icon: "💙" },
+  { name: "Postman", icon: "📮" },
+  { name: "Docker", icon: "🐳" },
+  { name: "Canva", icon: "🖌️" },
+  { name: "Render", icon: "▲" },
+  //{ name: "Netlify", icon: "🌐" },
+  { name: "Firebase", icon: "🔥" }
+]
 };
 
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A modern, responsive e-commerce platform built with React and Node.js, featuring real-time inventory management, secure payments, and an intuitive admin dashboard.",
-    techStack: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-    githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
-    liveUrl: "https://demo-ecommerce.alexjohnson.dev",
+    title: "AI Learner Hub",
+    description: "An AI-powered platform designed for engineering students to explore technologies, career paths, and learning resources based on their interests. Features personalized recommendations, roadmaps, and curated content for skill development.",
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "AI Integration"],
+    githubUrl: "https://github.com/rudraa19nov/ai-learner-hub",
+    liveUrl: "https://your-live-link.com",
     image: "/api/placeholder/400/250"
   },
+
   {
     id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    techStack: ["Vue.js", "Socket.io", "MongoDB", "Express", "Vuetify"],
-    githubUrl: "https://github.com/alexjohnson/task-manager",
-    liveUrl: "https://taskmanager.alexjohnson.dev",
+    title: "Airbnb Clone",
+    description: "A full-stack Airbnb-inspired web application with property listings, authentication, booking features, image uploads, and responsive UI design.",
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    githubUrl: "https://github.com/rudraa19nov/airbnb-clone",
+    liveUrl: "https://your-live-link.com",
     image: "/api/placeholder/400/250"
   },
+
   {
     id: 3,
-    title: "AI-Powered Analytics Dashboard",
-    description: "An intelligent analytics dashboard that leverages machine learning to provide actionable insights and predictive analytics for business metrics.",
-    techStack: ["Next.js", "Python", "TensorFlow", "D3.js", "PostgreSQL"],
-    githubUrl: "https://github.com/alexjohnson/ai-analytics",
-    liveUrl: "https://analytics.alexjohnson.dev",
+    title: "Alumni Connect",
+    description: "A MERN stack platform built to strengthen alumni-student connections through networking, mentorship opportunities, announcements, and communication features.",
+    techStack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    githubUrl: "https://github.com/rudraa19nov/alumni-connect",
+    liveUrl: "https://your-live-link.com",
+    image: "/api/placeholder/400/250"
+  },
+
+  {
+    id: 4,
+    title: "Krishi Sakhi",
+    description: "A smart agriculture solution developed during Smart India Hackathon to support farmers with technology-driven assistance, information access, and digital solutions.",
+    techStack: ["React.js", "Node.js", "MongoDB", "AI Tools"],
+    githubUrl: "https://github.com/rudraa19nov/krishi-sakhi",
+    liveUrl: "https://your-live-link.com",
     image: "/api/placeholder/400/250"
   }
 ];
@@ -77,29 +101,29 @@ export const projects = [
 export const experience = [
   {
     id: 1,
-    type: "work",
-    title: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
-    description: "Lead frontend development for enterprise applications, mentoring junior developers and implementing modern React architectures."
+    type: "achievement",
+    title: "Smart India Hackathon (SIH) Winner",
+    company: "Smart India Hackathon",
+    location: "India",
+    period: "2025",
+    description: "Worked with a team to develop 'Krishi Sakhi', an innovative solution for farmers. Contributed to full-stack development, problem solving, and project presentation during the national-level hackathon."
   },
   {
     id: 2,
-    type: "work", 
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
+    type: "project",
+    title: "Full Stack Developer",
+    company: "Personal Projects",
     location: "Remote",
-    period: "2020 - 2022",
-    description: "Built scalable web applications from conception to deployment, working directly with founders to translate business requirements into technical solutions."
+    period: "2024 - Present",
+    description: "Built multiple web applications including AI Learner Hub, Airbnb Clone, and Alumni Connect using MERN stack and AI integration."
   },
   {
     id: 3,
     type: "education",
-    title: "Bachelor of Science in Computer Science",
-    company: "University of California, Berkeley",
-    location: "Berkeley, CA", 
-    period: "2016 - 2020",
-    description: "Focused on software engineering and human-computer interaction. Graduated Magna Cum Laude with a 3.8 GPA."
+    title: "Bachelor of Technology in Engineering",
+    company: "Bundekhand Institute of Engineering and Technology, Jhansi",
+    location: "Jhansi",
+    period: "2023 - 2027",
+    description: "Final year engineering student focused on full-stack development, AI applications, and software engineering."
   }
 ];

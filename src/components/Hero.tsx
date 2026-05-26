@@ -16,9 +16,22 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
         <div className="mb-8 relative">
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1 shadow-2xl">
-            <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-              <span className="text-4xl font-bold text-gray-600 dark:text-gray-400">AJ</span>
-            </div>
+            <div className="relative group">
+                {/* Animated Gradient Blur */}
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full blur-xl opacity-70 group-hover:opacity-100 animate-pulse transition duration-1000"></div>
+
+                {/* Profile Container */}
+                <div className="relative w-52 h-52 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl backdrop-blur-sm">
+                  <img
+                    src="/profile.jpeg"
+                    alt="Rudraksha Singh Chauhan"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+
+                {/* Online Badge */}
+                <div className="absolute bottom-4 right-4 w-6 h-6 bg-green-500 border-4 border-gray-900 rounded-full animate-pulse"></div>
+              </div>
           </div>
         </div>
 
@@ -42,10 +55,17 @@ const Hero: React.FC = () => {
             Contact Me
           </button>
           
+         <a
+            href="/resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <button className="group px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-full hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
             <Download className="w-5 h-5" />
-            Download Resume
+              Download Resume
           </button>
+        </a>
         </div>
 
         <button

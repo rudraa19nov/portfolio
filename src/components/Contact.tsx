@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
   const socialLinks = [
     { icon: Github, url: personalInfo.social.github, label: 'GitHub' },
     { icon: Linkedin, url: personalInfo.social.linkedin, label: 'LinkedIn' },
-    { icon: Twitter, url: personalInfo.social.twitter, label: 'Twitter' }
+    // { icon: Twitter, url: personalInfo.social.twitter, label: 'Twitter' }
   ];
 
   return (

@@ -39,11 +39,11 @@ const About: React.FC = () => {
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-700 dark:to-purple-900/20 rounded-2xl p-8 shadow-lg">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm">
-                  <div className="text-2xl font-bold text-blue-600 mb-1">5+</div>
+                  <div className="text-2xl font-bold text-blue-600 mb-1">2+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
                 </div>
                 <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm">
-                  <div className="text-2xl font-bold text-purple-600 mb-1">50+</div>
+                  <div className="text-2xl font-bold text-purple-600 mb-1">10+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">Projects Completed</div>
                 </div>
                 <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm">
@@ -51,7 +51,7 @@ const About: React.FC = () => {
                   <div className="text-sm text-gray-600 dark:text-gray-400">Technologies</div>
                 </div>
                 <div className="text-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm">
-                  <div className="text-2xl font-bold text-orange-600 mb-1">3+</div>
+                  <div className="text-2xl font-bold text-orange-600 mb-1">2+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">Companies</div>
                 </div>
               </div>
