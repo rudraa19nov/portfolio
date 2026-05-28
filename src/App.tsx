@@ -15,7 +15,6 @@ function App() {
     <ThemeProvider>
       <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
         <Navigation />
-        <ThemeToggle />
         <main>
           <Hero />
           <About />

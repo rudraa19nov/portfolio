@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronDown, Download, Mail } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
+import ThemeToggle from './ThemeToggle';
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
@@ -12,8 +13,12 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-purple-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <section
+            id="hero"
+            className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-100 dark:from-gray-950 dark:via-slate-900 dark:to-purple-950"
+          >
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+        <ThemeToggle />
         <div className="mb-8 relative">
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-600 p-1 shadow-2xl">
             <div className="relative group">
@@ -37,7 +42,7 @@ const Hero: React.FC = () => {
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
           Hi, I'm{' '}
-          <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 bg-clip-text text-transparent animate-pulse">
             {personalInfo.name}
           </span>
         </h1>
@@ -49,8 +54,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <button
             onClick={scrollToContact}
-            className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
-          >
+            className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-blue-500/30 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"          >
             <Mail className="w-5 h-5" />
             Contact Me
           </button>
@@ -61,8 +65,9 @@ const Hero: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <button className="group px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold rounded-full hover:border-blue-600 dark:hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
-            <Download className="w-5 h-5" />
+          <button 
+              className="group px-8 py-4 backdrop-blur-lg bg-white/20 dark:bg-white/5 border border-white/20 dark:border-white/10 text-gray-800 dark:text-gray-200 font-semibold rounded-full hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+              <Download className="w-5 h-5" />
               Download Resume
           </button>
         </a>
@@ -77,11 +82,14 @@ const Hero: React.FC = () => {
         </button>
       </div>
 
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-gradient-to-br from-blue-400/20 to-purple-600/20 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-gradient-to-tr from-emerald-400/20 to-blue-600/20 blur-3xl"></div>
-      </div>
+     
+      {/* Animated Background Decoration */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+  <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-blue-400/20 dark:bg-blue-500/20 blur-3xl animate-pulse"></div>
+  <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-purple-400/20 dark:bg-purple-500/20 blur-3xl animate-pulse"></div>
+  <div className="absolute top-1/2 left-1/2 w-60 h-60 rounded-full bg-pink-400/10 dark:bg-pink-500/10 blur-3xl animate-bounce"></div>
+
+</div>
     </section>
   );
 };
