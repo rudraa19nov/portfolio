@@ -73,7 +73,7 @@ export const projects = [
     description: "A full-stack Airbnb-inspired web application with property listings, authentication, booking features, image uploads, and responsive UI design.",
     techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     githubUrl: "https://github.com/rudraa19nov/airbnb-clone",
-    liveUrl: "https://your-live-link.com",
+    liveUrl: "https://airnb-uiw8.onrender.com/",
     image: "/api/placeholder/400/250"
   },
 
